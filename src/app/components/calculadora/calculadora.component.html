@@ -1,0 +1,46 @@
+<!-- Jumbotron -->
+<div class="jumbotron text-center mt-5">
+
+    <!-- Title -->
+    <h2 class="card-title h2">Calculadora</h2>
+    <!-- Grid row -->
+    <div class="row d-flex justify-content-center">
+
+        <!-- Grid column -->
+        <div class="col-sm-5 p-2 m-2">
+            <label for="numero1" class="mr-4">Numero 1:</label>
+            <input type="number" #num1 id="numero1">
+        </div>
+        <div class="col-sm-5 p-2 m-2">
+            <label for="numero2" class="mr-4">Numero 2:</label>
+            <input type="number" #num2 id="numero2">
+        </div>
+
+        <div class="col-sm-7 p-2 m-2">
+            <label for="resultado" class="mr-4">Resultado:</label>
+            <input type="text" #resultado id="resultado" disabled>
+        </div>
+        <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+    <hr class="my-4">
+
+    <div class="row">
+        <div class="col">
+            <button type="button" class="btn btn-blue rounded-circle m-1" (click)="printSuma(num1.value, num2.value)" title="Sumar" #sumar id="sumar"> <i class="fas fa-plus"></i> </button>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-blue rounded-circle m-1" (click)="printResta(num1.value, num2.value)" title="Restar" #restar id="restar"> <i class="fas fa-minus"></i> </button>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-blue rounded-circle m-1" (click)="printDivision(num1.value, num2.value)" title="Dividir" #dividir id="dividir"> <i class="fas fa-divide"></i> </button>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-blue rounded-circle m-1" (click)="printMultiplicacion(num1.value, num2.value)" title="Multiplicar" #multiplicar id="multiplicar"> <i class="fas fa-times"></i> </button>
+        </div>
+    </div>
+
+</div>
+<!-- Jumbotron -->
