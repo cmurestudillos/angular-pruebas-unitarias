@@ -5,6 +5,7 @@ import { CalculadoraComponent } from './calculadora.component';
 describe('CalculadoraComponent', () => {
   let component: CalculadoraComponent;
   let fixture: ComponentFixture<CalculadoraComponent>;
+  // let numero:number;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -23,9 +24,22 @@ describe('CalculadoraComponent', () => {
     expect(component).toBeTruthy();
   });
 
+  // Despues de cada ejecucion del expect en "Funcion Sumar",
+  //  sumamos 1 a la variable para realizar la operacion
+  // afterEach(async() => {
+  //   numero++;
+  // });
+
+  it('Expect - toContain', async () => {
+    const titulo = document.getElementById('titulo').innerHTML;
+    // Se dispara directamente con parametros
+    expect(titulo).toContain('Calculadora');
+  });
+
   describe('Funcion Sumar', () => {
     it('La suma debe ser 4', async () => {
       // Se dispara mediante decoradores
+      // (<HTMLInputElement>document.getElementById('numero1')).value= numero.toString();
       (<HTMLInputElement>document.getElementById('numero1')).value= '2';
       (<HTMLInputElement>document.getElementById('numero2')).value= '2';
       document.getElementById('sumar').click();

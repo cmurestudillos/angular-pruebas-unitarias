@@ -1,0 +1,18 @@
+<!-- Card deck -->
+<div class="row row-cols-1 row-cols-md-3">
+    <div class="col mb-4" id="user-{{i}}" *ngFor="let usuario of usuarios; let i=index;">
+        <!-- Card -->
+        <div class="card m-3 z-depth-2">
+            <!-- Card image -->
+            <img class="img-fluid rounded mx-auto mt-3" src="{{usuario.avatar}}" alt="Card image cap" width="200">
+            <!-- Card content -->
+            <div class="card-body">
+                <!-- Title -->
+                <h4 class="card-title text-center"><a>{{usuario.login}}</a></h4>
+                <!-- Text -->
+                <p class="card-text text-center">{{usuario.url}}</p>
+            </div>
+        </div>
+        <!-- Card -->
+    </div>
+</div>
