@@ -1,0 +1,25 @@
+<div class="row mt-2">
+    <div class="col">
+        <form #formulario="ngForm" class="text-center border border-light p-5" (ngSubmit)="onSubmit(formulario)">
+            <p class="h4 mb-4">Formulario</p>
+            <!-- Nombre -->
+            <input placeholder="Nombre" class="form-control mb-4" name="firstname" ngModel required>
+            <!-- Apellido -->
+            <input placeholder="Apellido" class="form-control mb-4" name="lastname" ngModel required>
+            <!-- Email -->
+            <input placeholder="Email" class="form-control mb-4" name="email" ngModel required>
+            <!-- Mensaje -->
+            <div class="form-group">
+                <textarea placeholder="Escribe tu mensaje" class="form-control rounded-0" name="message" rows="3" ngModel required></textarea>
+            </div>
+            <!-- Boton de Enviar -->
+            <button class="btn btn-blue rounded-circle m-1" type="submit" [disabled]="formulario.invalid">Enviar</button>
+            <br><br>
+            <!-- ver los datos enviados en tiempo real -->
+            <strong>{{formulario.value.firstname}} </strong> <br>
+            <strong>{{formulario.value.lastname}} </strong> <br>
+            <strong>{{formulario.value.email}} </strong> <br>
+            <strong>{{formulario.value.message}} </strong> <br>
+        </form>
+    </div>
+</div>

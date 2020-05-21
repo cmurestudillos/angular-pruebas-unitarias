@@ -6,7 +6,7 @@ import { ListaUsuariosService } from './listausuarios.service';
 import { LISTA_USUARIOS_FAKE } from '../data/usuarios.fake.spec';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 
-fdescribe('Servicio: ListaUsuariosService', () => {
+describe('Servicio: ListaUsuariosService', () => {
   let service: ListaUsuariosService;
 
   beforeEach(() => {
