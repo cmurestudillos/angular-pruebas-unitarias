@@ -9,10 +9,13 @@ Ejemplo de SPA en Angular con el que realizar pruebas unitarias con Karma y Jasm
 Ejecutar en terminal el comando `ng serve` e introducir en el navegador `http://localhost:4200/` o ejecutar `ng serve -o` y se abrira automaticamente en el navegador.
 
 ## Generar proyecto - Produccion
-Ejecutar en terminal el comando `ng build` y comprobar que se ha generado el directorio `dist`. 
+Ejecutar en terminal el comando `ng build` y comprobar que se ha generado el directorio `/dist`. 
 
 ## Pruebas unitarias
 Ejecutar en terminal el comando `ng test` via [Karma](https://karma-runner.github.io).
+
+## Genera reporte de cobertura de codigo
+Ejecutar en terminal el comando `ng test --code-coverage` y nos generare un directorio `coverage` con informes de cobertura de código en archivos `.html`.
 
 ## Pruebas end-to-end
 Ejecutar en terminal el comando `ng e2e` via [Protractor](http://www.protractortest.org/).
