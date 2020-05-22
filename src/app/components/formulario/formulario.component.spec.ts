@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormularioComponent } from './formulario.component';
 import { FormsModule } from '@angular/forms';
 
-fdescribe('Componente: FormularioComponent', () => {
+describe('Componente: FormularioComponent', () => {
   let component: FormularioComponent;
   let fixture: ComponentFixture<FormularioComponent>;
 
@@ -23,4 +23,10 @@ fdescribe('Componente: FormularioComponent', () => {
   it('Componente creado', () => {
     expect(component).toBeTruthy();
   });
+  
+  it('El el formulario debe de ser valido al inicio', () => {
+    expect(component.form).toBeTruthy();
+  });
+
 });
+

@@ -33,7 +33,7 @@ describe('Componente: UsuariosComponent', () => {
   });
 
   it('Metodo: setUsuarios', async( ()=>{
-    expect(component.usuarios[0].login).toEqual('mojombo');
+    expect(component.usuarios[0].login).toContain('mojombo');
   }));
 
 });

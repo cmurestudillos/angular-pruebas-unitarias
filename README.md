@@ -15,7 +15,9 @@ Ejecutar en terminal el comando `ng build` y comprobar que se ha generado el dir
 Ejecutar en terminal el comando `ng test` via [Karma](https://karma-runner.github.io).
 
 ## Genera reporte de cobertura de codigo
+
 Ejecutar en terminal el comando `ng test --code-coverage` y nos generare un directorio `coverage` con informes de cobertura de código en archivos `.html`.
+Si conseguimos mantener la cobertura de nuestro codigo entre un 60%-80%, segun la norma, esta realmente bien.
 
 ## Pruebas end-to-end
 Ejecutar en terminal el comando `ng e2e` via [Protractor](http://www.protractortest.org/).
